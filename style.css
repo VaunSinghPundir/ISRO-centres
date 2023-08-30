@@ -1,0 +1,821 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Lora', serif;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+header{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    height: 160px;
+    color: white;
+    margin-top: 0;
+    /* margin-bottom: -330px; */
+    background-image: url("/Honor-Magic-2-Wall-DroidViews-18.jpg");
+    background-repeat: no-repeat;
+}
+nav img{
+    padding-top: 4px;
+    height: 130px;
+    width: 130px;
+    padding-left: 20px;
+}
+nav a{
+    text-decoration: none;
+}
+
+header h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    font-weight: 300;
+    color: white;
+}
+header h1 span{
+    color: orangered;
+    font-weight: bold;
+    margin-left: 12px;
+}
+
+#heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(14, 7, 110, 0.897);
+    color: white;
+    border-radius: 36px;
+    margin: 8px 20px 0;
+    height: 68px;
+    border: none;
+}
+#heading h2{
+    /* padding-left: 20px; */
+    font-size: 44px;
+    font-family: inherit;
+    font-weight: 500;
+}
+
+#search-type{
+    display: flex;
+    padding-left: 30px;
+    gap: 8px;
+    margin-top: 24px;
+    transition: 1s;
+}
+#search-bar{
+    padding-left: 28px;
+    width: 550px;
+    height: 44px;
+    border-radius: 36px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 300;
+}
+input::placeholder{
+    font-size: 28px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.city-btn{
+    grid-area: city-btn;
+}
+.state-btn{
+    grid-area: state-btn;
+}
+.center-btn{
+    grid-area: center-btn;
+}
+.srh-history{
+    grid-area: srh-history;
+}
+#search-bar{
+    grid-area: search-bar;
+}
+.clr-history{
+    grid-area: clr-history;
+}
+
+.button{
+    border-radius: 28px;
+    border: none;
+    background-color: rgba(14, 7, 110, 0.897);
+    color: white;
+    height: 44px;
+    width: 134px;
+    font-size: 18px;
+    font-family: inherit;
+    font-weight: 500;
+    transition: 0.5s;    
+}
+.button:hover{
+    cursor: pointer;
+}
+button:active{
+    scale: 0.9;
+    opacity: 0.2;
+}
+/* #del-btn{
+    height: 28px;
+    width: 43px;
+    background-color: red;
+} */
+.dataList{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.center-card{
+    display: flex;
+    width: 100%;
+    height: 110px;
+    background-image: url(/OIP\ \(4\).jpg);
+    color: white;
+    border: none;
+    border-radius: 36px;
+    /* margin-left: 16px; */
+    margin-top: 20px;
+    justify-content: space-evenly;
+    text-align: center;
+    position: relative;
+}
+.box{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    width: 500px;
+}
+.datah3{
+    padding-top: 4px;
+    font-weight: 550;
+    font-size: 28px;
+    /* color: orangered; */
+    align-items: center;
+}
+.dataP{
+    padding-top: 4px;
+    font-size: 24px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+}
+.newh3{
+    padding-left: 28px;
+    padding-top: 4px;
+    font-weight: 550;
+    font-size: 28px;
+    /* color: orangered; */
+    align-items: center;
+}
+.newP1{
+    padding-left: 4px;
+    padding-top: 4px;
+    font-size: 24px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    width: 424px;
+    gap: 4px;
+}
+.mistype{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 8px;
+    color: red;
+}
+.center-card:nth-child(even){
+    background-color: rgb(221, 224, 238);
+}
+/* #del-btn{
+    margin-top: 28px;
+    height: 36px;
+    width: 50px;
+    background-color: white;
+    color: red;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 700;
+} */
+/* .clr-history{
+    display: none;
+} */
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.clickbtn{
+    opacity: 2;
+}
+@media only screen and (max-width: 200px){
+    header{
+        gap: 4px;
+        height: 34px;
+        margin-top: 0;
+    }
+    header h1{
+        font-size: 5px;
+    }
+    header h1 span{
+        margin-left: 0px;
+    }
+    nav img{
+        margin-top: 2px;
+        height: 20px;
+        width: 20px;
+        padding-left: 0;
+    }
+    .heading-head{
+        width: 96%;
+        padding: 0 4px;
+    }
+    #heading{
+        width: 100%;
+    height: 46px;
+    margin-top: 4px;
+    margin-left: 0;
+    border-radius: 6px;
+    }
+    #heading h2{
+        padding-left: 2px;
+        font-size: 8px;
+        /* padding-left: 4px; */
+    }
+    #search-type{
+        padding-left: 4px;
+        margin-top: 8px;
+    }
+    #search-bar{
+        padding-left: 0;
+    width: 86px;
+    height: 14px;
+    border-radius: 10px;
+    font-size: 8px;
+
+    }
+    input::placeholder{
+        font-size: 12px;
+    }
+   
+    #search-type{
+        display: grid;
+        grid-template-areas: 
+        "search-bar search-bar search-bar search-bar"
+        "city-btn city-btn state-btn state-btn"
+        "center-btn center-btn srh-history srh-history"
+        "clr-history clr-history clr-history clr-history";
+    }
+    /* .button{
+        border-radius: 28px;
+        height: 20px;
+        width: 18px;
+        font-size: 16px;
+    } */
+    .center-card{
+        /* padding: 8px; */
+        display: grid;
+        text-align: center;
+        grid-template-columns: 1fr;
+        width: 100%;
+        /* margin-left: 4px; */
+        margin-top: 20px;
+        height: 208px;
+        border-radius: 16px;
+        /* position: relative; */
+    }
+    .dataList{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .newh3{
+        padding-left: 0px;
+    }
+    .newP1{
+        width: 78px;
+    }
+    .datah3, .newh3{
+        font-size: 12px;
+    }
+    .dataP, .newP1{
+        font-size: 10px;
+    }
+    .button{
+        height: 18px;
+        width: 36px;
+        font-size: 7px;
+    }
+    #del-btn{
+        height: 4px;
+        width: 4px;
+        bottom: 0;
+        font-size: 4px;
+    }
+}
+
+
+@media (min-width:200px) and (max-width:300px){
+    header{
+        gap: 4px;
+        height: 34px;
+        margin-top: 0;
+    }
+    header h1{
+        font-size: 10px;
+    }
+    header h1 span{
+        margin-left: 2px;
+    }
+    nav img{
+        margin-top: 2px;
+        height: 24px;
+        width: 24px;
+        padding-left: 6px;
+    }
+    .heading-head{
+        width: 96%;
+        padding: 0 4px;
+    }
+    #heading{
+        width: 100%;
+        height: 16px;
+        margin-top: 4px;
+        margin-left: 0;
+        border-radius: 12px;
+    }
+    #heading h2{
+        padding-left: 2px;
+        font-size: 7px;
+        /* padding-left: 4px; */
+    }
+    #search-type{
+        padding-left: 4px;
+        margin-top: 8px;
+    }
+    #search-bar{
+        padding-left: 4px;
+        width: 176px;
+        height: 16px;
+        border-radius: 20px;
+        font-size: 12px;
+    }
+    input::placeholder{
+        font-size: 12px;
+    }
+    /* #search-type{
+        display: grid;
+        grid-template-columns: 1fr;
+    } */
+    #search-type{
+        display: grid;
+        grid-template-areas: 
+        "search-bar search-bar search-bar search-bar"
+        /* "city-btn state-btn center-btn srh-history"
+        "clr-history"; */
+        "city-btn state-btn center-btn srh-history"
+        "clr-history clr-history clr-history clr-history";
+    }
+    .button{
+        border-radius: 28px;
+        height: 20px;
+        width: 18px;
+        font-size: 16px;
+    }
+    .center-card{
+        /* padding: 8px; */
+        display: grid;
+        text-align: center;
+        grid-template-columns: 1fr;
+        width: 100%;
+        /* margin-left: 4px; */
+        margin-top: 20px;
+        height: 248px;
+        border-radius: 16px;
+    }
+    .dataList{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .newh3{
+        padding-left: 4px;
+    }
+    .newP1{
+        width: 176px;
+    }
+    .datah3, .newh3{
+        font-size: 18px;
+    }
+    .dataP, .newP1{
+        font-size: 14px;
+    }
+    .button{
+        height: 12px;
+        width: 44px;
+        font-size: 8px;  
+    }
+    #del-btn{
+         height: 28px;
+        width: 28px;
+        top: 30%;
+    }
+}
+
+
+@media (min-width: 300px) and (max-width:500px) {
+
+    header{
+        gap: 4px;
+        height: 56px;
+        margin-top: 0;
+    }
+    header h1{
+        font-size: 15px;
+    }
+    header h1 span{
+        margin-left: 2px;
+    }
+    nav img{
+        margin-top: 2px;
+        height: 40px;
+        width: 40px;
+        padding-left: 6px;
+    }
+    .heading-head{
+        width: 95%;
+        padding: 0 4px;
+    }
+    #heading{
+        width: 100%;
+        height: 20px;
+        margin-top: 4px;
+        margin-left: 0;
+        border-radius: 12px;
+    }
+    #heading h2{
+        padding-left: 2px;
+        font-size: 11px;
+        /* padding-left: 4px; */
+    }
+    #search-type{
+        padding-left: 4px;
+        margin-top: 8px;
+    }
+    #search-bar{
+        padding-left: 4px;
+        width: 224px;
+        height: 16px;
+        border-radius: 20px;
+        font-size: 12px;
+    }
+    input::placeholder{
+        font-size: 14px;
+    }
+    /* #search-type{
+        display: grid;
+        grid-template-columns: 1fr 1fr auto;
+    } */
+    #search-type{
+        display: grid;
+        grid-template-areas: 
+        "search-bar search-bar search-bar search-bar"
+        "city-btn state-btn center-btn srh-history "
+        "clr-history clr-history clr-history clr-history";
+    }
+    .button{
+        border-radius: 28px;
+        height: 20px;
+        width: 18px;
+        font-size: 16px;
+    }
+    .center-card{
+        /* padding: 8px; */
+        display: grid;
+        text-align: center;
+        grid-template-columns: 1fr;
+        width: 100%;
+        /* margin-left: 4px; */
+        margin-top: 20px;
+        height: 192px;
+        border-radius: 16px;
+    }
+    .dataList{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .newh3{
+        padding-left: 4px;
+    }
+    .newP1{
+        width: 280px;
+    }
+    .datah3, .newh3{
+        font-size: 20px;
+    }
+    .dataP, .newP1{
+        font-size: 16px;
+    }
+    .button{
+        height: 12px;
+        width: 44px;
+        font-size: 8px;  
+    }
+    #del-btn{
+         height: 28px;
+    width: 28px;
+    top: 30%;
+    }
+}
+
+@media (min-width: 500px) and (max-width:650px) {
+
+    header{
+        gap: 12px;
+        height: 72px;
+        margin-top: 0;
+    }
+    header h1{
+        font-size: 20px;
+    }
+    header h1 span{
+        margin-left: 6px;
+    }
+    nav img{
+        margin-top: 4px;
+        height: 48px;
+        width: 48px;
+        padding-left: 8px;
+    }
+    #heading{
+        width: 100%;
+        height: 24px;
+        margin-top: 4px;
+        margin-left: 0;
+        border-radius: 12px;
+    }
+    #heading h2{
+        padding-left: 2px;
+        font-size: 16px;
+        /* padding-left: 4px; */
+    }
+    #search-type{
+        padding-left: 4px;
+        margin-top: 8px;
+    }
+    #search-bar{
+        padding-left: 4px;
+        width: 224px;
+        height: 16px;
+        border-radius: 20px;
+        font-size: 12px;
+    }
+    input::placeholder{
+        font-size: 14px;
+    }
+    /* #search-type{
+        display: grid;
+        grid-template-columns: 1fr 1fr auto;
+    } */
+    /* #search-type{
+        display: grid;
+        grid-template-areas: 
+        "search-bar search-bar search-bar search-bar"
+        "city-btn state-btn center-btn srh-history "
+        "clr-history clr-history clr-history clr-history";
+    } */
+    .button{
+        border-radius: 28px;
+        height: 24px;
+        width: 16px;
+        font-size: 16px;
+    }
+    .center-card{
+        /* padding: 8px; */
+        display: grid;
+        text-align: center;
+        grid-template-columns: 1fr;
+        width: 100%;
+        /* margin-left: 4px; */
+        margin-top: 20px;
+        height: 192px;
+        border-radius: 16px;
+        position: relative;
+    }
+    .dataList{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .newh3{
+        padding-left: 4px;
+    }
+    .newP1{
+        width: 464px;
+    }
+    .datah3, .newh3{
+        font-size: 20px;
+    }
+    .dataP, .newP1{
+        font-size: 16px;
+    }
+    .button{
+        height: 16px;
+        width: 44px;
+        font-size: 8px;  
+    }
+    #del-btn{
+        position: absolute;
+        right: 1%;
+        bottom: 42%;
+        width: 38px;
+    }
+
+}
+
+@media (min-width: 650px) and (max-width:800px) {
+
+    header{
+        gap: 12px;
+        height: 88px;
+        margin-top: 0;
+    }
+    header h1{
+        font-size: 24px;    
+    }
+    header h1 span{
+        margin-left: 6px;
+    }
+    nav img{
+        margin-top: 4px;
+        height: 60px;
+        width: 60px;
+        padding-left: 12px;
+    }
+    .heading-head{
+        width: 98%;
+        padding: 0 4px;
+    }
+    #heading{
+        width: 100%;
+        height: 32px;
+        margin-top: 4px;
+        margin-left: 0;
+        border-radius: 12px;
+    }
+    #heading h2{
+        padding-left: 2px;
+        font-size: 20px;
+        /* padding-left: 4px; */
+    }
+    #search-type{
+        padding-left: 8px;
+        margin-top: 8px;
+    }
+    #search-bar{
+        padding-left: 4px;
+        width: 300px;
+        height: 20px;
+        border-radius: 20px;
+        font-size: 14px;
+    }
+    input::placeholder{
+        font-size: 18px;
+    }
+    /* #search-type{
+        display: grid;
+        grid-template-columns: 1fr 1fr auto;
+    } */
+    /* #search-type{
+        display: grid;
+        grid-template-areas: 
+        "search-bar search-bar search-bar search-bar"
+        "city-btn state-btn center-btn srh-history "
+        "clr-history clr-history clr-history clr-history";
+    } */
+    /* .button{
+        border-radius: 28px;
+        height: 24px;
+        width: 16px;
+        font-size: 16px;
+    } */
+    .center-card{
+        display: flex;
+        width: 100%;
+        height: 110px;
+        border-radius: 36px;
+        margin-top: 20px;
+        /* justify-content: space-evenly; */
+        text-align: center;
+    }
+    .dataList{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .box{
+        /* display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; */
+    width: 282px;
+    }
+    .newh3{
+        padding-left: 4px;
+    }
+    .newP1{
+        width: 290px;
+    }
+    .datah3, .newh3{
+        font-size: 20px;
+    }
+    .dataP, .newP1{
+        font-size: 16px;
+    }
+    .button{
+        height: 20px;
+        width: 52px;
+        font-size: 8px; 
+    }
+}
+
+@media (min-width: 800px)and (max-width: 1150px)  {
+    header{
+        height: 100px;
+        width: 100%;
+    }
+    header h1{
+        font-size: 28px;
+    }
+    nav img{
+        width: 72px;
+        height: 74px;
+        margin-top: 4px;
+    }
+    #heading{
+        width: 95%;
+        height: 60px;
+    }
+    #heading h2{
+        font-size: 24px;
+    }
+}
+/* .center-head{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 8px;
+    font-weight: 500;
+    font-size: 30px;
+    color: black;
+}
+.center-data{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 8px;
+    font-size: 30px;
+    font-weight: 300;
+    color: black;
+}
+.box{
+    padding-right: 5px;
+} */
+/* .table{
+    width: 100%;
+}
+.table-head-data{
+    font-weight: 500;
+    font-size: 30px;
+}
+.table-cell-data{
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+} */
+/* .dataList{
+    margin: 0;
+    scale: 0.9;
+} */
